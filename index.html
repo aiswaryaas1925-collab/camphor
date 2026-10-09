@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTU Student Portal - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="image.png" alt="KTU Logo" class="logo-img">
+                Student Portal
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="examinations.html">Examinations</a>
+                <a href="results.html">Results</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <input type="search" id="global-search" placeholder="Search services, notices...">
+            </div>
+            <button id="notif-btn" class="action-btn" aria-label="Notifications">
+                🔔<span id="notif-badge" class="badge"></span>
+            </button>
+            <div class="profile-icon" title="Demo Profile">JD</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">Portal / Home</div>
+        <h1 class="page-title">Welcome, Anaswara</h1>
+        <p class="page-subtitle">Access your academic information, results, and examination details.</p>
+
+        <div class="grid">
+            <a href="results.html" class="card interactive">
+                <div id="indicator-results" class="card-indicator"></div>
+                <div class="card-icon">📊</div>
+                <h3 class="card-title">Academic Results</h3>
+                <p class="card-desc">View semester-wise SGPA, CGPA, and supply status.</p>
+            </a>
+            
+            <a href="examinations.html" class="card interactive">
+                <div id="indicator-exams" class="card-indicator"></div>
+                <div class="card-icon">📝</div>
+                <h3 class="card-title">Examinations</h3>
+                <p class="card-desc">Timetables, registration, and exam notifications.</p>
+            </a>
+
+            <a href="#" class="card interactive" onclick="alert(' feature: Timetable module coming soon.')">
+                <div class="card-icon">📅</div>
+                <p class="card-desc">Daily class schedules and academic calendar.</p>
+            </a>
+
+            <a href="#" class="card interactive" onclick="alert('feature: Academic Information module coming soon.')">
+                <div class="card-icon">📚</div>
+                <h3 class="card-title">Academic Info</h3>
+                <p class="card-desc">Course syllabus, credits, and faculty details.</p>
+            </a>
+            
+            <a href="#" class="card interactive" onclick="alert('feature: e-Lab module coming soon.')">
+                <div class="card-icon">💻</div>
+                <h3 class="card-title">e-Lab Access</h3>
+                <p class="card-desc">Virtual laboratory portals and assignments.</p>
+            </a>
+        </div>
+
+        <div class="card" style="margin-top: 2rem;">
+            <h3 class="card-title" style="margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">University Announcements (Demo Data)</h3>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 1rem;">
+                    <strong><a href="results.html" style="color: var(--primary-blue); text-decoration: none;">New Result Published</a></strong><br>
+                    <span class="card-desc">B.Tech S3 (R,S) Exam Dec 2025 results are out.</span>
+                </li>
+                <li>
+                    <strong><a href="examinations.html" style="color: var(--primary-blue); text-decoration: none;">Examination Notice</a></strong><br>
+                    <span class="card-desc">S5 timetable has been finalized. Hall tickets available soon.</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 style="display:flex; align-items:center; gap:0.5rem;">
+                    <img src="image.png" alt="KTU Logo" class="footer-logo-img">
+                    APJ Abdul Kalam Technological University
+                </h3>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Thiruvananthapuram, Kerala, India.</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 1rem;">**</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Student Dashboard</a></li>
+                    <li><a href="results.html">Results Archive</a></li>
+                    <li><a href="examinations.html">Exam Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Administration / Helpline</h3>
+                <ul>
+                    <li><a href="#" onclick="alert('Helpdesk')">Student Grievance</a></li>
+                    <li><a href="#" onclick="alert('Helpdesk')">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
